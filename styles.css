@@ -1,0 +1,111 @@
+body {
+  /*Se coloca fuente de tipo Roboto con google fonts, fondo usando rgba*/
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.galeria {
+  text-align: center;
+  /*Para centrar el texto*/
+  background-image: url("img/galaxy.jpg");
+  /*Colocamos una imagen de fondo*/
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 2em;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body div div {
+  display: inline-block;
+  /*Usamos inline block para remplazar el display flex*/
+  height: 450px;
+  /*Tamaño de la carta*/
+  width: 280px;
+  /*Ancho de la carta*/
+  margin: 1em;
+  /*Margen de 1em*/
+  padding: 1em;
+  /*Relleno de 1em*/
+  border-radius: 10px;
+  /*Borde de radio de 10px*/
+  vertical-align: top;
+  /*Vertical arriba*/
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /*Sombra usando rgba*/
+  box-sizing: border-box;
+}
+
+/*Medidas de las cartas*/
+body div img {
+  width: 100%;
+  /*Ancho de la imagen*/
+  object-fit: contain;
+  /*Sirve para que la imagen permanezca en la card*/
+  border-radius: 5px;
+}
+
+/*Texto de las cartas*/
+body div div h3 {
+  text-transform: uppercase;
+  /*Texto en mayuscula*/
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  /*Tamaño de fuente*/
+  font-weight: bold;
+  /*Estilo de fuente*/
+  font-style: italic;
+  /*Estilo cursiva*/
+}
+
+/*Colocando la misma altura a todas las imagenes de las cartas*/
+body div img {
+  height: 400px;
+}
+
+/*Cards con fondos únicos*/
+
+#card1 {
+  background: linear-gradient(#53e6de, #10aa31);
+  /*Usando un gradiente lineal*/
+}
+
+/*Cartas con fondos rgb*/
+
+#card2 {
+  background-color: rgb(53, 154, 236);
+}
+
+#card3 {
+  background-color: rgb(231, 76, 60);
+}
+
+#card4 {
+  background-color: rgb(37, 235, 119);
+}
+
+#card5 {
+  background-color: rgb(241, 196, 15);
+}
+
+#card6 {
+  background-color: rgb(155, 89, 182);
+}
+
+#card7 {
+  background: radial-gradient(#e66465, #9198e5);
+}
+
+/*Fondo de carta general*/
+.card {
+  background: radial-gradient(#3f87a6, #ebf8e1, #3726ce);;
+}
