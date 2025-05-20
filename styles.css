@@ -73,14 +73,12 @@ body div img {
 }
 
 /*Cards con fondos únicos*/
-
 #card1 {
   background: linear-gradient(#53e6de, #10aa31);
   /*Usando un gradiente lineal*/
 }
 
 /*Cartas con fondos rgb*/
-
 #card2 {
   background-color: rgb(53, 154, 236);
 }
@@ -108,4 +106,18 @@ body div img {
 /*Fondo de carta general*/
 .card {
   background: radial-gradient(#3f87a6, #ebf8e1, #3726ce);;
+}
+
+/* Uso de media queries para tablets*/
+@media (max-width: 1024px) {
+  .card, #card1, #card2, #card3, #card4, #card5, #card6, #card7 {
+    width: 45%; 
+  }
+}
+
+/* Uso de media queries para telefonos */
+@media (max-width: 768px) {
+  .card, #card1, #card2, #card3, #card4, #card5, #card6, #card7 {
+    width: 90%;
+  }
 }
